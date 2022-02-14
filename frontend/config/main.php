@@ -30,21 +30,21 @@ return [
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
+                    'levels' => ['error'],
                 ],
             ],
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                '<action>' => '<controller>/<action>',
+                // '<controller>/<action>/<id:\d+>' => '<controller>/<action>',
             ],
         ],
-        */
     ],
     'params' => $params,
 ];

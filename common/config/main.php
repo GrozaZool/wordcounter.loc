@@ -4,7 +4,10 @@ return [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
-    'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+    'language' => 'ru-RU',
+    'sourceLanguage' => 'ru-RU',
+    'timeZone' => 'Europe/Moscow',
+    'vendorPath' => dirname(__DIR__, 2) . '/vendor',
     'components' => [
         'cache' => [
             'class' => 'yii\caching\FileCache',
